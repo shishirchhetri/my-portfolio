@@ -1,11 +1,7 @@
-import React from 'react'
-import './portfolio.css'
-import IMG1 from "../../assets/portfolio1.jpg"
-import IMG2 from "../../assets/portfolio2.jpg"
-import IMG3 from "../../assets/portfolio3.jpg"
-import IMG4 from "../../assets/portfolio4.jpg"
-import IMG5 from "../../assets/portfolio5.png"
-import IMG6 from "../../assets/portfolio6.jpg"
+import React from "react";
+import "./portfolio.css";
+let module = require('./data')
+let data = module.data
 
 const Portfolio = () => {
   return (
@@ -14,76 +10,27 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio-container">
-
-        <article className="portfolio-item">
-          <div className="portfolio-item-img">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3 className='portfolio-title'>Portfolio Title</h3>
-          <div className="portfolio-item-link">
-          <a href="https://github.com/shishirchhetri" className='btn' target="_blank">Github</a>
-          <a href="#" className='btn btn-primary' target="_blank">Live demo</a>
-          </div>
-        </article>
-
-        <article className="portfolio-item">
-          <div className="portfolio-item-img">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3 className='portfolio-title'>Portfolio Title</h3>
-          <div className="portfolio-item-link">
-          <a href="https://github.com/shishirchhetri" className='btn' target="_blank">Github</a>
-          <a href="#" className='btn btn-primary' target="_blank">Live demo</a>
-          </div>
-        </article>
-
-        <article className="portfolio-item">
-          <div className="portfolio-item-img">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3 className='portfolio-title'>Portfolio Title</h3>
-          <div className="portfolio-item-link">
-          <a href="https://github.com/shishirchhetri" className='btn' target="_blank">Github</a>
-          <a href="#" className='btn btn-primary' target="_blank">Live demo</a>
-          </div>
-        </article>
-
-        <article className="portfolio-item">
-          <div className="portfolio-item-img">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3 className='portfolio-title'>Portfolio Title</h3>
-          <div className="portfolio-item-link">
-          <a href="https://github.com/shishirchhetri" className='btn' target="_blank">Github</a>
-          <a href="#" className='btn btn-primary' target="_blank">Live demo</a>
-          </div>
-        </article>
-
-        <article className="portfolio-item">
-          <div className="portfolio-item-img">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3 className='portfolio-title'>Portfolio Title</h3>
-          <div className="portfolio-item-link">
-          <a href="https://github.com/shishirchhetri" className='btn' target="_blank">Github</a>
-          <a href="#" className='btn btn-primary' target="_blank">Live demo</a>
-          </div>
-        </article>
-
-        <article className="portfolio-item">
-          <div className="portfolio-item-img">
-            <img src={IMG1} alt="" />
-          </div>
-          <h3 className='portfolio-title'>Portfolio Title</h3>
-          <div className="portfolio-item-link">
-          <a href="https://github.com/shishirchhetri" className='btn' target="_blank">Github</a>
-          <a href="#" className='btn btn-primary' target="_blank">Live demo</a>
-          </div>
-        </article>
-        
+        {data.map((data) => {
+          return (
+            <article key={data.key} className="portfolio-item">
+              <div className="portfolio-item-img">
+                <img src={data.img} alt={data.title} />
+              </div>
+              <h3 className="portfolio-title">{data.title}</h3>
+              <div className="portfolio-item-link">
+                <a href={data.github} className="btn" target="_blank" rel="noreferrer">
+                  Github
+                </a>
+                <a href={data.demo} className="btn btn-primary" target="_blank" rel="noreferrer">
+                  Live demo
+                </a>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

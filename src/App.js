@@ -9,7 +9,7 @@ import Services from './components/services/Services';
 import Testimonials from './components/testimonials/Testimonials';
 
 function App() {
-  return (
+return (
     <>
       <Header/>
       <Nav />
@@ -20,7 +20,7 @@ function App() {
       <Testimonials/>
       <Contact/>
       <Footer/>
-    </>
+      </>
   );
 }
 
