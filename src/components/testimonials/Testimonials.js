@@ -27,7 +27,7 @@ const Testimonials = () => {
 {
   reviews.map(review =>{
     return(
-      <SwiperSlide className="review">
+      <SwiperSlide  key={review.id}className="review">
           <div className="review-img">
             <img src={review.img} alt="" />
           </div>
