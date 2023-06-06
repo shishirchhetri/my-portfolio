@@ -1,3 +1,6 @@
+# Intro:
+This project was just created for fun following youtube turtorial.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -61,10 +64,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
+
+
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify
+
+### Live demo:https://shishirchhetri-portfolio.netlify.app/
+
+### Some snaps:
+![image](https://github.com/shishirchhetri/my-portfolio/assets/68102168/a3130cca-2853-4aee-918f-b3d89f87883a)
+![image](https://github.com/shishirchhetri/my-portfolio/assets/68102168/c4101351-bbe8-40d3-9c4a-5c2f0af7f47a)
+![image](https://github.com/shishirchhetri/my-portfolio/assets/68102168/882d7d99-70a9-43c6-a2cd-b2d4a95f0f60)
+![image](https://github.com/shishirchhetri/my-portfolio/assets/68102168/fdee76ea-afb0-4b7f-8551-f6e7c2e4a8f9)
+![image](https://github.com/shishirchhetri/my-portfolio/assets/68102168/b65fc9b8-76f8-4a68-8479-1fc47a044931)
+
+# Mobile view:
+![image](https://github.com/shishirchhetri/my-portfolio/assets/68102168/8759cd08-6f81-4efe-a2a7-2b0dbd88df3e)
+![image](https://github.com/shishirchhetri/my-portfolio/assets/68102168/6f942fcb-3f66-4bfe-ab7e-8bd3742ad508)
+![image](https://github.com/shishirchhetri/my-portfolio/assets/68102168/5db16cf9-5b52-4253-8598-7d7b2a23aaaa)
+![image](https://github.com/shishirchhetri/my-portfolio/assets/68102168/354a4a90-37c1-46ea-b60a-7dd1b8b0ad66)
+![image](https://github.com/shishirchhetri/my-portfolio/assets/68102168/39a31cf4-d5c1-484b-853a-8d7d26c39a14)
+
+
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
